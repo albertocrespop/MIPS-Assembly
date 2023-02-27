@@ -20,7 +20,7 @@ mostrar_numero:			# $a0 = entero por mostrar
 	li	$v0, 1
 	syscall
 	jr	$ra
-pedir_numero:			# $a0 = direccion de cadena "pedirnumx"
+pedir_numero:			# $a0 = direccion de cadena
 	addiu	$sp, $sp, -4	# Apila $ra
 	sw	$ra, 0($sp)
 	
