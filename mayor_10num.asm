@@ -23,7 +23,7 @@ mostrar_numero:			# $a0 = entero por mostrar
 pedir_numero:			# $a0 = direccion de cadena
 	addiu	$sp, $sp, -4	# Apila $ra
 	sw	$ra, 0($sp)
-	
+
 	jal	mostrar_cadena
 	
 	li	$v0, 5
